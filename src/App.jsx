@@ -9,6 +9,7 @@ function App() {
             <Layout>
                 <Routes>
                     <Route path='/' element={<Dashboard />} />
+                    <Route path='/asd' element={<Dashboard />} />
                 </Routes>
             </Layout>
         </BrowserRouter>
