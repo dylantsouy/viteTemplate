@@ -1,20 +1,23 @@
 import React from 'react';
-import Layout from '@/layouts/main';
+import Layout from '@/components/layouts/main';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Dashboard from '@/containers/dashboard';
-import NoMatch from '@/containers/noMatch';
+import Home from '@/containers/Home';
+import Page404 from '@/containers/Page404';
+import Auth from '@/auths/Auth';
 
 function App() {
     return (
-        <BrowserRouter>
-            <Layout>
-                <Routes>
-                    <Route index element={<Dashboard />} />
-                    <Route path='/viteTemplate/' element={<Dashboard />} />
-                    <Route path='*' element={<NoMatch />} />
-                </Routes>
-            </Layout>
-        </BrowserRouter>
+        <Auth>
+            <BrowserRouter>
+                <Layout>
+                    <Routes>
+                        <Route index element={<Home />} />
+                        <Route path='/' element={<Home />} />
+                        <Route path='*' element={<Page404 />} />
+                    </Routes>
+                </Layout>
+            </BrowserRouter>
+        </Auth>
     );
 }
 
