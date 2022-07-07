@@ -24,8 +24,6 @@ const fetcher = async (url) => {
         throw error;
     }
 
-    console.log(res);
-
     const productsData = res.data;
 
     return productsData;
