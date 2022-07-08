@@ -29,11 +29,11 @@ const fetcher = async (url) => {
     return productsData;
 };
 
-const useProducts = () => {
+const useProducts = (type) => {
     const { data, error } = useSWR([`${apiUrl}/products`], fetcher);
 
     return {
-        productsData: data,
+        data: data,
         isLoading: !error && !data,
         isError: error,
     };

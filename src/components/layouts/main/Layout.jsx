@@ -23,11 +23,9 @@ const Layout = ({ children }) => {
     }
 
     return (
-        <div className='px-20'>
-            <Header logout={logout}/>
-            <div>
-                <main>{children}</main>
-            </div>
+        <div className='container'>
+            <Header logout={logout} />
+            <main className='main'>{children}</main>
         </div>
     );
 };

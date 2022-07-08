@@ -1,0 +1,50 @@
+//Global css variable value
+$primary_bg: #48b4b1;
+$light_bg: #fffdf4;
+$orange_bg: #fad899;
+$orange_bg_dark: #e9875e;
+$second_bg: #88c4c3;
+
+$primary_text: #48b4b1;
+$gray_text: #e5e7eb;
+$dark_text: #2b2350;
+
+#root {
+    height: 100%;
+}
+.container {
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+}
+.main {
+    position: relative;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $dark_text;
+    overflow-x: hidden;
+}
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a{
+    color: #333;
+    &:hover{
+        color: #2b2350;
+    }
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.relative{
+    position: relative;
+}

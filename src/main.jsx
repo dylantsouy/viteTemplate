@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css';
+import './index.scss';
 import * as serviceWorker from './serviceWorker';
 import { LOCALFORAGE_INITIATE } from './initiates/initiate';
 

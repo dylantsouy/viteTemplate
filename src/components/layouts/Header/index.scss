@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15% 30px;
+    margin-bottom: 50px;
+   box-shadow: 0 0 4px #e5e7eb;
+    .headerLeft{
+        display: flex;
+        align-items: center;
+        font-weight: 800;
+        font-family: serif;
+        img{
+            width: 120px;
+            margin-right: 80px;
+        }
+        .headerLinks{
+            margin-top: 10px;
+            font-size: 18px;
+            .headerLink{
+                margin-right: 20px;
+            }
+        }
+    }
+    .headerRight{
+        display: flex;
+        align-items: center;
+        .cartIconSet{
+            position: relative;
+            display: flex;
+            cursor: pointer;
+            .cartIcon{
+                margin-left: 20px;
+            }
+            .cartBadge{
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                border-radius: 100%;
+                top: 10px;
+                right: -5px;
+                background-color: #e9875e;
+                width: 16px;
+                height: 16px;
+                color: #fff;
+            }
+        }
+    }
+}
