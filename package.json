@@ -13,6 +13,7 @@
         "preview": "vite preview",
         "lint": "eslint --fix 'src/**/*.{js,jsx}'",
         "prepare": "husky install",
+        "predeploy": "npm run build",
         "deploy": "gh-pages -d dist"
     },
     "dependencies": {
