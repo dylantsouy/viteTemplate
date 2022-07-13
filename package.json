@@ -1,6 +1,7 @@
 {
     "name": "viteapp",
     "private": true,
+    "homepage": "https://dylantsouy.github.io/viteTemplate",
     "version": "0.0.0",
     "scripts": {
         "start": "npm run dev",
